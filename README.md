@@ -16,11 +16,11 @@ Create a file called bild.yaml in the project directory formatted as a list like
 
 ```yaml
 - coffee:
-    files: 'src/*.coffee'
-    out: 'lib'
+    files: src/*.coffee
+    out: lib
 - uglify: 
-    files: 'public/js/*.js'
-    out: 'public/js/min.js'
+    files: public/js/*.js
+    out: public/js/min.js
 ```
 
 Run the command `bild` to compile some files to coffeescript and minify some other files.
