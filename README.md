@@ -14,14 +14,14 @@ Run `npm install` (may require sudo).
 
 Create a file called bild.yaml in the project directory formatted as a list like this:
 
-`yaml
+```yaml
 - coffee:
     files: 'src/*.coffee'
     out: 'lib'
 - uglify: 
     files: 'public/js/*.js'
     out: 'public/js/min.js'
-`
+```
 
 Run the command `bild` to compile some files to coffeescript and minify some other files.
 
