@@ -1,7 +1,11 @@
 {
   "name": "bild",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "bin": "bild",
+  "repo": {
+    "type":"git",
+    "url": "http://github.com/ithkuil/bild.git"
+  },
   "dependencies": {
     "yaml": ""
   },
