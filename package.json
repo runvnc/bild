@@ -1,8 +1,8 @@
 {
   "name": "bild",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "bin": "bild",
-  "repo": {
+  "repository": {
     "type":"git",
     "url": "http://github.com/ithkuil/bild.git"
   },
