@@ -1,0 +1,13 @@
+{
+  "name": "bild",
+  "version": "0.0.2",
+  "bin": "bild",
+  "dependencies": {
+    "yaml": ""
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "preinstall": "npm i -g toffee-script"
+  }
+}

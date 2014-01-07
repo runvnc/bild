@@ -1,0 +1,24 @@
+#!/usr/local/bin/toffee
+
+#This is toffeescript
+
+yaml = require 'yaml'
+
+fs = require 'fs'
+if not fs.exists! 'bild.yaml'
+  console.error "No bild.yaml file found."
+  process.exit 1
+  
+e, datastr = fs.readFile! 'bild.yaml', 'utf8'
+
+data = yaml.eval datastr
+
+for item in data
+  name = Object.keys(item)[0]
+  if process.argv?.length > 2 and
+     process.argv?[2] isnt name
+    continue
+  else
+    obj = item[name]
+    plugin = require "bild-#{name}"
+    e, out = plugin.process! obj, data
